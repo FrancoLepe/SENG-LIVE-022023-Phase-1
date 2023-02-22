@@ -30,3 +30,37 @@ const pokemons = [
     likes: 11,
   },
 ];
+
+const test = document.querySelectorAll('div')
+console.log(test)
+
+const welcomeP = document.create
+
+
+const pokeForm = document.getElementById('poke-form')
+console.log(pokeForm)
+
+const pokeContainer = document.querySelector('#poke-Container')
+console.log(pokeContainer)
+
+const labels = document.getElementsByClassName('form-label')
+console.log(labels)
+
+const allDivs = document.querySelector('div')
+console.log(allDivs)
+
+const goals =document.getElementById('lecture-goals')
+goals.remove()
+
+
+const renderPokemon =() => {
+    const pokeDiv =document.querySelector('#poke-container')
+   pokemons.forEach((poke)=>{
+    const pokeP = document.createElement('p')
+    pokeP.setAttribute('aligh','center')
+    pokeP.innerHTML =`<img src= ${poke.img} width ="550" height="450">`
+    pokeDiv.appendChild(pokeP)
+})
+}
+
+renderPokemon()
